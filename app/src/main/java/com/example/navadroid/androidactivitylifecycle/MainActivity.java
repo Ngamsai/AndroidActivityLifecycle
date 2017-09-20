@@ -24,6 +24,12 @@ public class MainActivity extends AppCompatActivity {
         Log.d(TAG, "onStart() called");
     }
 
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        Log.d(TAG, "onRestart() called");
+    }
+
     // called when the activity has become visible
     @Override
     protected void onResume() {
